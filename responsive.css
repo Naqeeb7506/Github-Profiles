@@ -1,0 +1,109 @@
+@media screen and (max-width: 1250px) {
+  .main .container {
+    margin: 50px auto;
+  }
+  .main .container .search input {
+    min-width: 70%;
+  }
+  nav {
+    top: 0%;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .card .head .left {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .main .container {
+    margin: 100px auto;
+  }
+  .main .container .title {
+    margin-top: 100px;
+  }
+  .card .status {
+    width: 100%;
+    flex-direction: column;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  .card .head .left .user-info h2,
+  .card .about h2,
+  .card .status h2 {
+    font-size: 25px;
+  }
+  .card .head .left .user-info p,
+  .card .about p,
+  .card .head .link a {
+    font-size: 18px;
+  }
+  nav {
+    top: -10%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    padding: 10px;
+  }
+  .card .head {
+    flex-direction: column;
+  }
+  .card .head .link {
+    margin: 20px 0;
+  }
+  .card .about {
+    margin: 20px 0;
+  }
+  .main .container .search input {
+    min-width: 90%;
+    margin: 0 auto;
+  }
+  .card .head .left .user-info h2,
+  .card .about h2,
+  .card .status h2 {
+    font-size: 22px;
+  }
+  .card .head .left .user-info p,
+  .card .about p,
+  .card .head .link a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main .container {
+    margin: 100px auto;
+  }
+  nav {
+    top: -12%;
+  }
+  .main .container .title h1 {
+    font-size: 25px;
+  }
+  .main .container .search input,
+  .main .container .search button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .main .container .title h1 {
+    font-size: 22px;
+  }
+  .main .container .search {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .main .container .search input {
+    width: 100%;
+  }
+  .main .container .title {
+    margin-top: 150px;
+  }
+}

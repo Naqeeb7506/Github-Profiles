@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Profile</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="responsive.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="images/icons8-github-500.png"
+      type="image/x-icon"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <a id="modes">
+          <i class="fa-solid fa-sun" id="darkmode"></i>
+          <i class="fa-solid fa-moon no-display" id="lightmode"></i>
+        </a>
+      </nav>
+      <div class="container">
+        <div class="title">
+          <h1>Search Github Profile</h1>
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Enter Your Github Username"
+          />
+          <button id="searchbtn">Search</button>
+        </div>
+        <div id="profile-container"></div>
+        <div id="loading"></div>
+      </div>
+    </div>
+    <!-- JS -->
+    <script src="app.js"></script>
+  </body>
+</html>

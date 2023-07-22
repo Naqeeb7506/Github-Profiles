@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* dark mode start */
+:root .darkmode {
+  --bg: black;
+  --primary: white;
+}
+
+.main .darkmode {
+  background: var(--bg);
+  color: var(--primary);
+}
+
+body .darkmode {
+  background: var(--bg);
+}
+/* dark mode end */
+
+body {
+  background: var(--bg);
+}
+
+:root {
+  --bg: white;
+  --primary: black;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  font-family: "Raleway", sans-serif;
+  background: var(--bg);
+  color: var(--primary);
+  position: relative;
+  transition: all 0.5s linear;
+}
+
+/* navbar start */
+nav {
+  position: absolute;
+  right: 8%;
+  top: 5%;
+  font-size: 22px;
+}
+
+nav a {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+nav .no-display {
+  display: none;
+}
+
+/* navbar end */
+
+/* main container start */
+.main .container {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .container .title {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.main .container .search {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .container .search input {
+  min-width: 50%;
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--primary);
+}
+
+.main .container .search button {
+  font-size: 20px;
+  padding: 5px;
+  background: var(--primary);
+  color: var(--bg);
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.main .container .search button:hover,
+.card .head .link a:hover {
+  background: var(--bg);
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+/* main container end */
+
+/* card  start*/
+
+#profile-container {
+  width: 100%;
+  margin: 20px;
+  font-size: 30px;
+}
+
+#loading {
+  font-size: 30px;
+  color: var(--primary) !important;
+}
+
+.card {
+  margin: 50px auto;
+  box-shadow: 0 0 20px var(--primary);
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  transition: all 0.5s linear;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .head .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card .head .left .user-info h2,
+.card .about h2,
+.card .status h2 {
+  font-size: 30px;
+}
+
+.card .head .left .user-info p,
+.card .about p {
+  font-size: 20px;
+}
+
+.card .head .user-icon {
+  width: 150px;
+  height: 150px;
+}
+
+.card .head .user-icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card .head .link a {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--bg);
+  background: var(--primary);
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.card .about {
+  margin: 30px 0;
+}
+
+.card .status {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.card .status .status-item {
+  text-align: center;
+}
+
+.card .status p {
+  font-size: 30px;
+}
+/* card  end*/
